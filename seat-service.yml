@@ -1,0 +1,17 @@
+server:
+  port: 5005
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/airline_seat_db
+    username: postgres
+    password: arpad5
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: seat-service-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JacksonJsonDeserializer
+      properties:
+        spring.json.trusted.packages: com.zosh.common_lib.event

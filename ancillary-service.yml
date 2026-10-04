@@ -1,0 +1,8 @@
+server:
+  port: 5007
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/airline_ancillary_db
+    username: postgres
+    password: arpad5

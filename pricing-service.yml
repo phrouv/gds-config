@@ -1,0 +1,8 @@
+server:
+  port: 5006
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/airline_pricing_db
+    username: postgres
+    password: arpad5
