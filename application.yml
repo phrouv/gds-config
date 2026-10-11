@@ -24,3 +24,5 @@ spring:
       # and set this to "validate" (only checks schema matches entities).
       ddl-auto: update
     show-sql: false
+    liquibase:
+      enabled: false
