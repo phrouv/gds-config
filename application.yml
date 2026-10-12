@@ -19,10 +19,7 @@ eureka:
 spring:
   jpa:
     hibernate:
-      # "update" auto-creates/alters tables based on entity classes.
-      # OK for development. For production, use Flyway or Liquibase migrations
-      # and set this to "validate" (only checks schema matches entities).
-      ddl-auto: update
+      ddl-auto: validate
     show-sql: false
   liquibase:
-    enabled: false
+    enabled: true
